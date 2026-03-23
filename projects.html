@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — Проекты</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Ilyas Keldibekov<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О себе</a></li>
+        <li><a href="projects.html" class="active">Проекты</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+        <span class="theme-icon">☀</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Мои <em>проекты</em></h1>
+      <p class="page-sub">Работы, которые я создал в процессе обучения</p>
+    </section>
+
+    <section class="projects-section">
+      <h2 class="section-label">Завершённые проекты</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-img">
+            <img src="./project.png" alt="Скриншот проекта 1" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Сайт-портфолио v1</h3>
+            <p>Первая версия личного сайта-портфолио, созданная в рамках практической работы. Включает страницы о себе и контактную форму.</p>
+            <div class="project-links">
+              <a href="/" class="btn btn-sm btn-primary">Открыть сайт</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="future-projects">
+      <h2 class="section-label">Будущие проекты</h2>
+      <div class="future-grid">
+        <div class="future-card">
+          <div class="future-icon">🛒</div>
+          <h3>Интернет-магазин</h3>
+          <p>Полноценный e-commerce сайт с корзиной, каталогом товаров и системой авторизации пользователей на основе React и Node.js.</p>
+          <span class="future-badge">В планах</span>
+        </div>
+        <div class="future-card">
+          <div class="future-icon">📱</div>
+          <h3>Мобильное приложение</h3>
+          <p>Приложение для управления личными задачами и расписанием с уведомлениями. Планируется разработка на React Native.</p>
+          <span class="future-badge">В планах</span>
+        </div>
+        <div class="future-card">
+          <div class="future-icon">🤖</div>
+          <h3>Чат-бот</h3>
+          <p>Telegram-бот для автоматизации рутинных задач с интеграцией AI-сервисов и базы данных для хранения пользовательских данных.</p>
+          <span class="future-badge">В планах</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> — <span class="nick">@Ilyas_Adov</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

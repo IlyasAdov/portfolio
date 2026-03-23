@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — Главная</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Ilyas Keldibekov<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="about.html">О себе</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+        <span class="theme-icon">☀</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-label">Привет, меня зовут</p>
+        <h1 class="hero-title">Ильяс <br><em>Кельдибеков</em></h1>
+        <p class="hero-desc">Я студент специальности <strong>«Информационные системы»</strong> — создаю веб-сайты, изучаю современные технологии и стремлюсь стать профессиональным разработчиком.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">Мои проекты</a>
+          <a href="contact.html" class="btn btn-outline">Связаться</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="./photo.png" alt="Моё фото"/>
+        </div>
+        <div class="photo-badge">👋 Открыт к сотрудничеству</div>
+      </div>
+    </section>
+
+    <section class="skills-preview">
+      <h2 class="section-label">Мои навыки</h2>
+      <div class="skills-grid">
+        <div class="skill-chip">HTML</div>
+        <div class="skill-chip">CSS</div>
+        <div class="skill-chip">JavaScript</div>
+        <div class="skill-chip">Vue.js</div>
+        <div class="skill-chip">Git</div>
+        <div class="skill-chip">Python</div>
+        <div class="skill-chip">PHP</div>
+        <div class="skill-chip">GO</div>
+        <div class="skill-chip">MySQL</div>
+        <div class="skill-chip">PostgeSQL</div>
+        <div class="skill-chip">Redis</div>
+        <div class="skill-chip">SQL</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> — <span class="nick">@Ilyas_Adov</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

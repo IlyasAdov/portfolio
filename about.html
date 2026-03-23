@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио — О себе</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Ilyas Keldibekov<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html" class="active">О себе</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+        <span class="theme-icon">☀</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>О <em>себе</em></h1>
+      <p class="page-sub">Немного о том, кто я такой и чем занимаюсь</p>
+    </section>
+
+    <section class="about-grid">
+      <div class="about-bio card">
+        <h2>Биография</h2>
+        <ul class="bio-list">
+          <li><span class="bio-label">Имя</span> Кельдибеков Ильяс</li>
+          <li><span class="bio-label">Город</span> Павлодар</li>
+          <li><span class="bio-label">Университет</span> Торайгыров</li>
+          <li><span class="bio-label">Специальность</span> Информационные системы</li>
+        </ul>
+      </div>
+
+      <div class="about-interests card">
+        <h2>Интересы</h2>
+        <div class="interests-list">
+          <div class="interest-item">
+            <span class="interest-icon">🌐</span>
+            <div>
+              <strong>Веб-разработка</strong>
+              <p>Создание современных сайтов и веб-приложений</p>
+            </div>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon">🎨</span>
+            <div>
+              <strong>Дизайн интерфейсов</strong>
+              <p>UI/UX, создание удобных и красивых интерфейсов</p>
+            </div>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon">🤖</span>
+            <div>
+              <strong>Искусственный интеллект</strong>
+              <p>Машинное обучение и нейронные сети</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-skills card">
+        <h2>Навыки</h2>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>HTML / CSS</span><span>95%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:95%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>JavaScript</span><span>90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:90%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>PHP</span><span>90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:90%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>SQL</span><span>90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:90%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Git</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="--pct:85%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-hobbies card">
+        <h2>Хобби</h2>
+        <div class="hobbies-grid">
+          <div class="hobby-tag">🎮 Игры</div>
+          <div class="hobby-tag">🏐 Волейбол</div>
+          <div class="hobby-tag">🎵 Музыка</div>
+          <div class="hobby-tag">✈️ Путешествия</div>
+        </div>
+      </div>
+
+      <div class="about-goals card full-width">
+        <h2>Цели</h2>
+        <p>Я стремлюсь стать квалифицированным <strong>full-stack разработчиком</strong>, способным создавать масштабируемые и удобные веб-приложения. В ближайшее время хочу углубить знания в области современных JavaScript-фреймворков и backend-разработки. Моя долгосрочная цель — работать в технологической компании, где я смогу вносить реальный вклад в развитие продуктов, которыми пользуются миллионы людей.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> — <span class="nick">@Ilyas_Adov</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
